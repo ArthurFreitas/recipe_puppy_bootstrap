@@ -21,7 +21,6 @@
 		"kaiwood.endwise",
 		"ninoseki.vscode-gem-lens",
 		"rebornix.ruby",
-		"castwide.solargraph",
 		"wingrunr21.vscode-ruby"
 	],
 	
@@ -29,9 +28,8 @@
 	"forwardPorts": [3000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bundle install",
+	"postCreateCommand": "bundle install"
 
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
-
 }

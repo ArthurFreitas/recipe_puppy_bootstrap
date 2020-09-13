@@ -1,0 +1,16 @@
+<h1>Recipes for <%= @search %></h1>
+<table>
+    <tr>
+        <th>Photo</th>
+        <th>Title</th>
+        <th>Ingredients</th>
+    </tr>
+    <% @recipes.each do |recipe|%>
+    <% sanitizedRecipe = sanitize recipe['title']%>
+    <tr>
+        <td><%= link_to image_tag(recipe['thumbnail']), recipe['href'] %></td>
+        <td><%= link_to sanitizedRecipe, recipe['href']%></td>
+        <td><%= sanitize recipe['ingredients']%></td>
+    </tr>
+    <% end%>
+</table>
